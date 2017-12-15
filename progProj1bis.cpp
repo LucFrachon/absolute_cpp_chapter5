@@ -1,11 +1,19 @@
+/*
+This program asks the user for 10 average mileage values for a car (10 speed steps from 10 to 100kph),
+then asks them to enter 10 mileage values (10 speed steps) for each of 10 test drives.
+It then compares the average values by speed step to the values obtained during each test drive, as a 
+formatted table or as a bar chart using asterisks.
+*/
+
+
 #include <iostream>
 #include <iomanip>
 #include <algorithm>
 
 using namespace std;
 
-const int NUM_SPEEDS = 3;
-const int NUM_DRIVES = 3;
+const int NUM_SPEEDS = 3; //reduce for testing; default = 10
+const int NUM_DRIVES = 3;  //reduce for testing; default = 10
 const int MAX_DISPLAY = 10;  //max number of asterisks to display
 
 void fillArray(float arr[], const int size);
